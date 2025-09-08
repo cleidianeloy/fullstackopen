@@ -1,0 +1,11 @@
+sequenceDiagram
+    participant browser
+    participant server
+    Note right of browser: O navegador faz uma requisição POST para enviar uma nova nota
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+    activate server
+    browser-->>server: {content: "new", date: "2025-09-08T20:13:40.987Z"}
+    server-->>browser: {"message":"note created"}
+
+    deactivate server
