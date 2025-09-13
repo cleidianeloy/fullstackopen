@@ -12,8 +12,7 @@ sequenceDiagram
     server-->>browser: CSS file
     deactivate server
 
-    Note right of browser: O navegador executa um JS depois de retornar código 200 que atualiza as notas com o JSON 
-
+    Note right of browser: After 200 status code the browser executes the JS code updating the notes using the JSON
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
     activate server
     server-->>browser: JS file

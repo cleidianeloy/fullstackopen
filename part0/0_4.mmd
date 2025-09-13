@@ -19,7 +19,7 @@ sequenceDiagram
 
  
 
-    Note right of browser: O navegador começa a executar o código JavaScript que busca o JSON com as notas no servidor
+    Note right of browser: The navigator starts to execute the JS code searching the JSON with the notes from the server.
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
     activate server
@@ -31,4 +31,4 @@ sequenceDiagram
     server-->>browser: JSON file
     deactivate server
 
-    Note right of browser: Depois do código 200 da requisição as notas são renderizadas na tela
+    Note right of browser: After the 200 status code from the request, the notes are rendered on the screen.
