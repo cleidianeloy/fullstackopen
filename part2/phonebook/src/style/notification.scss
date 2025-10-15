@@ -1,0 +1,17 @@
+$good: green;
+$bad: red;
+.notification{
+    width: 100%;
+    font-size: 1.5rem;
+    border: 5px solid $good;
+    color: $good;
+    background-color: lightgray;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0.5rem;
+
+    &.error{
+        border-color: $bad;
+        color: $bad;
+    }
+}
